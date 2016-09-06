@@ -1,0 +1,6 @@
+.left-sidebar {
+  a.active {
+    color: lighten($brand-primary, 30%);
+    cursor: default;
+  }
+}
