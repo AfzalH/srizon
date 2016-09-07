@@ -28,7 +28,7 @@ export default class LeftSidebar extends React.Component {
                   className="icon-home"/> Home</Link></li>
                 <li><Link to="/products" activeClassName="active"><i className="icon-shop"/> Products</Link></li>
                 <li><Link to="/services" activeClassName="active"><i className="icon-web"/> Services</Link></li>
-                <li><Link to="/support" activeClassName="active"><i className="icon-forum"/> Support/Contact</Link>
+                <li><Link to="/support" activeClassName="active"><i className="icon-forum"/> Contact</Link>
                 </li>
                 <li><Link to="/blog" activeClassName="active"><i className="icon-edit"/> Blog</Link></li>
                 <li><Link to="/tutorials" activeClassName="active"><i className="icon-code"/> Tutorials</Link></li>
