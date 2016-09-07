@@ -1,6 +1,24 @@
 .left-sidebar {
-  a.active {
-    color: lighten($brand-primary, 30%);
-    cursor: default;
+  background: #fafafa;
+  margin-top: 15px;
+  padding: 0 30px;
+
+  .srizon-logo {
+    padding: 20px 0;
+  }
+
+  nav.left-menu {
+    ul {
+      list-style: none;
+      line-height: 2;
+      font-size: 20px;
+      font-weight: 300;
+      padding: 0;
+      text-align: right;
+      a.active {
+        color: lighten($brand-primary, 30%);
+        cursor: default;
+      }
+    }
   }
 }

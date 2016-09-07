@@ -12,7 +12,9 @@ export default class LeftSidebar extends React.Component {
                 <div className="row">
                     <div className="col-xs-12">
                         <div className="srizon-logo">
-                            <img src="/images/logo.svg" alt="Srizon Logo"/>
+                            <Link to="/">
+                                <img src="/images/logo.svg" alt="Srizon Logo"/>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-xs-12">
