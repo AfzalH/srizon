@@ -3,6 +3,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 // imported componenets
 import LeftSidebar from './LeftSidebar';
+import MobileTopbar from './MobileTopbar';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -17,7 +18,7 @@ export default class App extends React.Component {
             <LeftSidebar path={this.props.location.pathname}/>
           </div>
           <div className="col-xs-12 visible-xs">
-            mobile device header
+            <MobileTopbar path={this.props.location.pathname}/>
           </div>
           <div className="col-sm-8 col-md-9 col-xs-12">
             <ReactCSSTransitionGroup
