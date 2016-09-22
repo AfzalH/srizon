@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, browserHistory } from 'react-router';
 
 export default class LeftSidebar extends React.Component {
   constructor(props) {
@@ -11,6 +11,10 @@ export default class LeftSidebar extends React.Component {
 
   toggleState() {
     this.setState({showMenu: !this.state.showMenu});
+  }
+
+  loadLoginView() {
+    browserHistory.push('/login');
   }
 
   render() {
@@ -48,7 +52,7 @@ export default class LeftSidebar extends React.Component {
               }
             </div>
           </div>
-          <div className="col-xs-3 text-right"><span className="account-button"><i className="icon-person"/></span>
+          <div className="col-xs-3 text-right" onClick={this.loadLoginView.bind(this)}><span className="account-button"><i className="icon-person"/></span>
           </div>
         </div>
       </div>
